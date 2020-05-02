@@ -1,0 +1,10 @@
+useDynLib(salesmanRcpp, .registration = TRUE)
+
+export(Towns, distance, monVoyageR, monVoyageClosest, monVoyageRcpp)
+S3method(plot, salesmanRcpp)
+
+importFrom(Rcpp, evalCpp)
+importFrom("graphics", "plot", "segments", "text")
+importFrom("stats", "rnorm")
+importFrom("combinat", "permn")
+
